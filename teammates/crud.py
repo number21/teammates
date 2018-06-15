@@ -60,7 +60,7 @@ def add():
 
         # [START image_url2]
         if image_url:
-            data['imageUrl'] = image_url
+            data['avatar'] = image_url
         # [END image_url2]
 
         mate = get_model().create(data)
@@ -80,7 +80,7 @@ def edit(id):
         image_url = upload_image_file(request.files.get('image'))
 
         if image_url:
-            data['imageUrl'] = image_url
+            data['avatar'] = image_url
 
         mate = get_model().update(data, id)
 
