@@ -18,20 +18,20 @@
 <div class="media">
   {# [START mate_image] #}
   <div class="media-left">
-    {% if mate.imageUrl %}
-      <img class="mate-image" src="{{mate.imageUrl}}">
+    {% if mate.avatar %}
+      <img class="mate-image" src="{{mate.avatar}}">
     {% else %}
       <img class="mate-image" src="https://www.freeiconspng.com/uploads/no-image-icon-6.png">
     {% endif %}
   </div>
   {# [END mate_image] #}
   <div class="media-body">
-    <h4 class="mate-title">
-      {{mate.title}}
-      <small>{{mate.publishedDate}}</small>
+    <h4 class="mate-name">
+      {{mate.name}}
+      <small>{{mate.birthDate}}</small>
     </h4>
-    <h5 class="mate-author">By {{mate.author|default('Unknown', True)}}</h5>
-    <p class="mate-description">{{mate.description}}</p>
+    <h5 class="mate-department">{{mate.department|default('Unknown', True)}}</h5>
+    <p class="mate-summary">{{mate.summary}}</p>
   </div>
 </div>
 

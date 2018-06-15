@@ -12,15 +12,15 @@
 <div class="media">
   <a href="/mates/{{mate.id}}">
     <div class="media-left">
-      {% if mate.imageUrl %}
-        <img src="{{mate.imageUrl}}">
+      {% if mate.avatar %}
+        <img src="{{mate.avatar}}">
       {% else %}
         <img src="https://www.freeiconspng.com/uploads/no-image-icon-6.png">
       {% endif %}
     </div>
     <div class="media-body">
-      <h4>{{mate.title}}</h4>
-      <p>{{mate.author}}</p>
+      <h4>{{mate.name}}</h4>
+      <p>{{mate.department}}</p>
     </div>
   </a>
 </div>

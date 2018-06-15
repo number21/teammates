@@ -34,7 +34,7 @@ def from_datastore(entity):
 
 def list(limit=10, cursor=None):
     ds = get_client()
-    query = ds.query(kind='Mate', order=['title'])
+    query = ds.query(kind='Mate', order=['name'])
     it = query.fetch(limit=limit, start_cursor=cursor)
     entities, more_results, cursor = it.next_page()
     entities = builtin_list(map(from_datastore, entities))
