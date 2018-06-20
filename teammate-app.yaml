@@ -18,7 +18,7 @@ spec:
       containers:
       - name: teammates-app
         # Replace 'your-project-id' with your project ID.
-        image: gcr.io/your-project-id/teammates
+        image: gcr.io/eternal-galaxy-206609/teammates
         # This setting makes nodes pull the docker image every time before
         # starting the pod.
         imagePullPolicy: Always

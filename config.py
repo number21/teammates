@@ -3,7 +3,7 @@
 DATA_BACKEND = 'datastore'
 
 # Google Cloud Project ID.
-PROJECT_ID = 'your-project-id'
+PROJECT_ID = 'eternal-galaxy-206609'
 
 # Replace user, pass, host, and database with the respective values of your
 # Cloud SQL instance.
